@@ -1,0 +1,15 @@
+* Rshift
+
+Manual screen temperature management service for macOS based on [[https://github.com/jonls/redshift][Redshift]].
+
+** Configuration
+
+- Reads config from =rshift.json=.
+- You must provide =12:00 AM= key in your config.
+
+** Remarks
+
+- It breaks on wake or visiting display settings.\\
+  =rshift= refreshes every 15 seconds so just wait for a few seconds and it will fix itself.
+- Do not use =redshift= and =rshift= services simultaneously.\\
+  You can still use =redshift= in manual mode.
